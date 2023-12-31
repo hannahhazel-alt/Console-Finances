@@ -86,3 +86,15 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+//Calculating total months// 
+
+var numberOfMonths = finances.length; 
+console.log("Total Months: " + numberOfMonths); 
+
+var netTotalPL = 0; 
+var averageChange = ""; 
+var totalChange = 0; 
+var oldValue = 0;
+var incDecArray = [];
+
