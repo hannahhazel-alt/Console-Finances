@@ -109,3 +109,17 @@ for(i = 0; i<finances.length; i++){
   oldValue = parseInt(finances[i][1]);
 }
 
+//This is the greatest increase in profit/loss// 
+console.log("Total: $" + netTotalPL);
+console.log("Average Change: " + (totalChange - finances[0][1])/(numberOfMonths - 1));
+
+//Sorting the values in the array in descending order to get the greatest value first// 
+incDecArray.sort(function(a, b){return b - a}); 
+var greatestValue = incDecArray[0];
+console.log("Greatest increase in profit/loss: February 2012: $" + greatestValue );
+
+//This is the greatest decrease in profit/loss// 
+//Sorting the values in the array in ascending order to get the lowest value first// 
+incDecArray.sort(function(a, b){return a - b}); 
+var lowestValue = incDecArray[0];
+console.log("Greatest decrease in profit/loss: February 2012: $" + lowestValue );
