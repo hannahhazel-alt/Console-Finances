@@ -98,3 +98,14 @@ var totalChange = 0;
 var oldValue = 0;
 var incDecArray = [];
 
+for(i = 0; i<finances.length; i++){
+  //Calculating NET Total profit/loss// 
+  netTotalPL += finances[i][1];
+  averageChange = Number(finances[i][1]) - Number(oldValue);
+
+  //Pushing all values into another array// 
+  incDecArray.push(averageChange); 
+  totalChange += averageChange;
+  oldValue = parseInt(finances[i][1]);
+}
+
